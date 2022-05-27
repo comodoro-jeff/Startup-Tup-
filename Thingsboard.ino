@@ -4,10 +4,10 @@
 #include <TimeAlarms.h>
 #include "DHT.h"
 
-const char* ssid = "RIBEIRO"; // Nome da rede wifi ao qual se deseja conectar
-const char* password = "Gadaesjeje05";// Senha da rede wifi ao qual se deseja conectar
+const char* ssid = "XXXXXXX"; // Nome da rede wifi ao qual se deseja conectar
+const char* password = "XXXXXXXXXX";// Senha da rede wifi ao qual se deseja conectar
 const char* mqtt_server = "demo.thingsboard.io"; // Endereço para ThingsBoard live demo
-const char* device_token = "3loCYZ06phuVeLfzUUJm"; // Credenciais para o device que se deseja conectar
+const char* device_token = "XXXXXXXXXXXXXXXXXX"; // Credenciais para o device que se deseja conectar
 
 // Instancia o cliente wifi
 WiFiClient wifi_client;
@@ -68,9 +68,7 @@ void reconectar() {
 }
 
 void coletar_e_enviar_dados() {
-  //Aguarde 2 segundos entre as medições
-  delay(2000);
-
+  
   Serial.print("Coletando dados de temperatura e umidade... ");
   
   //Lê a umidade e armazena em u
